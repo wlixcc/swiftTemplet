@@ -11,10 +11,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        example(of: "initializing a stack from an array literal") {
-          var stack: Stack = [1.0, 2.0, 3.0, 4.0]
-          print(stack)
-          stack.pop()
+        example(of: "using collection") {
+            
+          var list = LinkedList<Int>()
+            list.append(1)
+            list.append(2)
+            list.append(3)
+            list.append(4)
+            var list2 = list
+            
+            list2.remove(after: list.node(at: 1)!)
+            print(list2)
+          
         }
     }
 

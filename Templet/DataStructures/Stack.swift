@@ -14,9 +14,9 @@ struct Stack<Element> {
         storage.isEmpty
     }
     
-    public init() {}
+     init() {}
     
-    public init(_ elements: [Element]) {
+     init(_ elements: [Element]) {
         storage = elements
     }
     
