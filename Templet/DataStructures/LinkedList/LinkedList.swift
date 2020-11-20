@@ -158,7 +158,7 @@ extension LinkedList: Collection {
     }
     
     struct Index: Comparable {
-        public var node: Node<Value>?
+         var node: Node<Value>?
 
         
         static func < (lhs: LinkedList<Value>.Index, rhs: LinkedList<Value>.Index) -> Bool {
@@ -190,7 +190,7 @@ extension LinkedList: Collection {
 
 extension LinkedList: CustomStringConvertible {
 
-  public var description: String {
+   var description: String {
     guard let head = head else {
       return "Empty list"
     }

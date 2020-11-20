@@ -12,17 +12,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         example(of: "using collection") {
-            
-          var list = LinkedList<Int>()
-            list.append(1)
-            list.append(2)
-            list.append(3)
-            list.append(4)
-            var list2 = list
-            
-            list2.remove(after: list.node(at: 1)!)
-            print(list2)
-          
+            var queue = QueueRingBuffer<String>(count: 3)
+            queue.enqueue("Ray")
+            queue.enqueue("Brian")
+            queue.enqueue("Eric")
+            print(queue)
+            print(queue.dequeue())
+            print(queue.peek)
+
         }
     }
 
