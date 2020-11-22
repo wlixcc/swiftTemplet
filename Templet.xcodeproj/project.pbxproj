@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		776504D02568E50600525BC7 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504CF2568E50600525BC7 /* BinarySearchTree.swift */; };
+		776504DE2569FA8800525BC7 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504DD2569FA8800525BC7 /* AVLNode.swift */; };
+		776504E22569FA8F00525BC7 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E12569FA8F00525BC7 /* AVLTree.swift */; };
 		779440C8256505D300F042DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C7256505D300F042DB /* AppDelegate.swift */; };
 		779440CA256505D300F042DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C9256505D300F042DB /* SceneDelegate.swift */; };
 		779440CC256505D300F042DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440CB256505D300F042DB /* ViewController.swift */; };
@@ -24,9 +27,25 @@
 		77A14D4B25676D8C0013BC28 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14D4A25676D8C0013BC28 /* RingBuffer.swift */; };
 		77A14D4E25676F910013BC28 /* QueueRingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14D4D25676F910013BC28 /* QueueRingBuffer.swift */; };
 		77A14D51256770FC0013BC28 /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14D50256770FC0013BC28 /* QueueStack.swift */; };
+		77A14D55256793740013BC28 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14D54256793740013BC28 /* TreeNode.swift */; };
+		77A14DD82567990D0013BC28 /* TempletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14DD72567990C0013BC28 /* TempletTests.swift */; };
+		77A14DE12568AE8A0013BC28 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14DE02568AE8A0013BC28 /* BinaryNode.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		77A14DD0256798FF0013BC28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779440BC256505D300F042DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779440C3256505D300F042DB;
+			remoteInfo = Templet;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		776504CF2568E50600525BC7 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		776504DD2569FA8800525BC7 /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
+		776504E12569FA8F00525BC7 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
 		779440C4256505D300F042DB /* Templet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Templet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779440C7256505D300F042DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779440C9256505D300F042DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,10 +65,22 @@
 		77A14D4A25676D8C0013BC28 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		77A14D4D25676F910013BC28 /* QueueRingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueRingBuffer.swift; sourceTree = "<group>"; };
 		77A14D50256770FC0013BC28 /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
+		77A14D54256793740013BC28 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		77A14DCB256798FF0013BC28 /* TempletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A14DD72567990C0013BC28 /* TempletTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempletTests.swift; sourceTree = "<group>"; };
+		77A14DDD256799160013BC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A14DE02568AE8A0013BC28 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		779440C1256505D300F042DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A14DC8256798FF0013BC28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				779440C6256505D300F042DB /* Templet */,
+				77A14DCC256798FF0013BC28 /* TempletTests */,
 				779440C5256505D300F042DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				779440C4256505D300F042DB /* Templet.app */,
+				77A14DCB256798FF0013BC28 /* TempletTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +127,7 @@
 		779440DC256505F800F042DB /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				77A14D532567936C0013BC28 /* Tree */,
 				779440F9256765EF00F042DB /* Queue */,
 				779440F8256765D000F042DB /* LinkedList */,
 				779440F7256765BF00F042DB /* Stack */,
@@ -140,6 +174,27 @@
 			path = Queue;
 			sourceTree = "<group>";
 		};
+		77A14D532567936C0013BC28 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				77A14D54256793740013BC28 /* TreeNode.swift */,
+				77A14DE02568AE8A0013BC28 /* BinaryNode.swift */,
+				776504CF2568E50600525BC7 /* BinarySearchTree.swift */,
+				776504DD2569FA8800525BC7 /* AVLNode.swift */,
+				776504E12569FA8F00525BC7 /* AVLTree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		77A14DCC256798FF0013BC28 /* TempletTests */ = {
+			isa = PBXGroup;
+			children = (
+				77A14DDD256799160013BC28 /* Info.plist */,
+				77A14DD72567990C0013BC28 /* TempletTests.swift */,
+			);
+			path = TempletTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +215,24 @@
 			productReference = 779440C4256505D300F042DB /* Templet.app */;
 			productType = "com.apple.product-type.application";
 		};
+		77A14DCA256798FF0013BC28 /* TempletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A14DD2256798FF0013BC28 /* Build configuration list for PBXNativeTarget "TempletTests" */;
+			buildPhases = (
+				77A14DC7256798FF0013BC28 /* Sources */,
+				77A14DC8256798FF0013BC28 /* Frameworks */,
+				77A14DC9256798FF0013BC28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A14DD1256798FF0013BC28 /* PBXTargetDependency */,
+			);
+			name = TempletTests;
+			productName = TempletTests;
+			productReference = 77A14DCB256798FF0013BC28 /* TempletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +244,10 @@
 				TargetAttributes = {
 					779440C3256505D300F042DB = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					77A14DCA256798FF0013BC28 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 779440C3256505D300F042DB;
 					};
 				};
 			};
@@ -188,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				779440C3256505D300F042DB /* Templet */,
+				77A14DCA256798FF0013BC28 /* TempletTests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +281,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77A14DC9256798FF0013BC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -211,23 +296,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				779440DE2565062E00F042DB /* Stack.swift in Sources */,
+				776504D02568E50600525BC7 /* BinarySearchTree.swift in Sources */,
 				779440CC256505D300F042DB /* ViewController.swift in Sources */,
+				776504DE2569FA8800525BC7 /* AVLNode.swift in Sources */,
 				779440C8256505D300F042DB /* AppDelegate.swift in Sources */,
 				779440F52567653100F042DB /* DoublyLinkedList.swift in Sources */,
 				77A14D51256770FC0013BC28 /* QueueStack.swift in Sources */,
 				779440EF2567610100F042DB /* QueueArray.swift in Sources */,
+				77A14DE12568AE8A0013BC28 /* BinaryNode.swift in Sources */,
 				77A14D4B25676D8C0013BC28 /* RingBuffer.swift in Sources */,
 				77A14D4E25676F910013BC28 /* QueueRingBuffer.swift in Sources */,
+				77A14D55256793740013BC28 /* TreeNode.swift in Sources */,
 				779440EC2567609300F042DB /* Queue.swift in Sources */,
 				779440E62566987D00F042DB /* Node.swift in Sources */,
 				779440E22565079500F042DB /* Helpers.swift in Sources */,
 				779440CA256505D300F042DB /* SceneDelegate.swift in Sources */,
 				779440F2256763CF00F042DB /* QueueLinkedList.swift in Sources */,
 				779440E92566990900F042DB /* LinkedList.swift in Sources */,
+				776504E22569FA8F00525BC7 /* AVLTree.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A14DC7256798FF0013BC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A14DD82567990D0013BC28 /* TempletTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77A14DD1256798FF0013BC28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779440C3256505D300F042DB /* Templet */;
+			targetProxy = 77A14DD0256798FF0013BC28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		779440CD256505D300F042DB /* Main.storyboard */ = {
@@ -401,6 +507,44 @@
 			};
 			name = Release;
 		};
+		77A14DD3256798FF0013BC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TempletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzjuzhi.templet.TempletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Templet.app/Templet";
+			};
+			name = Debug;
+		};
+		77A14DD4256798FF0013BC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TempletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzjuzhi.templet.TempletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Templet.app/Templet";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +562,15 @@
 			buildConfigurations = (
 				779440D9256505D400F042DB /* Debug */,
 				779440DA256505D400F042DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A14DD2256798FF0013BC28 /* Build configuration list for PBXNativeTarget "TempletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A14DD3256798FF0013BC28 /* Debug */,
+				77A14DD4256798FF0013BC28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
