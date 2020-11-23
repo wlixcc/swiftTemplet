@@ -10,6 +10,9 @@
 		776504D02568E50600525BC7 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504CF2568E50600525BC7 /* BinarySearchTree.swift */; };
 		776504DE2569FA8800525BC7 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504DD2569FA8800525BC7 /* AVLNode.swift */; };
 		776504E22569FA8F00525BC7 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E12569FA8F00525BC7 /* AVLTree.swift */; };
+		776504E6256B57AA00525BC7 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E5256B57AA00525BC7 /* TrieNode.swift */; };
+		776504EA256B594400525BC7 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E9256B594400525BC7 /* Trie.swift */; };
+		776504EE256B610300525BC7 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504ED256B610300525BC7 /* TrieTests.swift */; };
 		779440C8256505D300F042DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C7256505D300F042DB /* AppDelegate.swift */; };
 		779440CA256505D300F042DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C9256505D300F042DB /* SceneDelegate.swift */; };
 		779440CC256505D300F042DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440CB256505D300F042DB /* ViewController.swift */; };
@@ -46,6 +49,9 @@
 		776504CF2568E50600525BC7 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		776504DD2569FA8800525BC7 /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
 		776504E12569FA8F00525BC7 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
+		776504E5256B57AA00525BC7 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		776504E9256B594400525BC7 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		776504ED256B610300525BC7 /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
 		779440C4256505D300F042DB /* Templet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Templet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779440C7256505D300F042DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779440C9256505D300F042DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +188,8 @@
 				776504CF2568E50600525BC7 /* BinarySearchTree.swift */,
 				776504DD2569FA8800525BC7 /* AVLNode.swift */,
 				776504E12569FA8F00525BC7 /* AVLTree.swift */,
+				776504E5256B57AA00525BC7 /* TrieNode.swift */,
+				776504E9256B594400525BC7 /* Trie.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 			children = (
 				77A14DDD256799160013BC28 /* Info.plist */,
 				77A14DD72567990C0013BC28 /* TempletTests.swift */,
+				776504ED256B610300525BC7 /* TrieTests.swift */,
 			);
 			path = TempletTests;
 			sourceTree = "<group>";
@@ -298,10 +307,12 @@
 				779440DE2565062E00F042DB /* Stack.swift in Sources */,
 				776504D02568E50600525BC7 /* BinarySearchTree.swift in Sources */,
 				779440CC256505D300F042DB /* ViewController.swift in Sources */,
+				776504EA256B594400525BC7 /* Trie.swift in Sources */,
 				776504DE2569FA8800525BC7 /* AVLNode.swift in Sources */,
 				779440C8256505D300F042DB /* AppDelegate.swift in Sources */,
 				779440F52567653100F042DB /* DoublyLinkedList.swift in Sources */,
 				77A14D51256770FC0013BC28 /* QueueStack.swift in Sources */,
+				776504E6256B57AA00525BC7 /* TrieNode.swift in Sources */,
 				779440EF2567610100F042DB /* QueueArray.swift in Sources */,
 				77A14DE12568AE8A0013BC28 /* BinaryNode.swift in Sources */,
 				77A14D4B25676D8C0013BC28 /* RingBuffer.swift in Sources */,
@@ -322,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77A14DD82567990D0013BC28 /* TempletTests.swift in Sources */,
+				776504EE256B610300525BC7 /* TrieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
