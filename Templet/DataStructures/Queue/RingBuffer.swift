@@ -19,6 +19,7 @@ import Foundation
   
    var first: T? {
     array[readIndex]
+    
   }
   
    mutating func write(_ element: T) -> Bool {

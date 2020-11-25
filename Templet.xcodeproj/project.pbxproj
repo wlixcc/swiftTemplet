@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77313E4E256DE4FB009C591D /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E4D256DE4FB009C591D /* PriorityQueue.swift */; };
+		77313E52256DE5CE009C591D /* PriorityQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E51256DE5CE009C591D /* PriorityQueueTests.swift */; };
+		774759FF256B8D53000B0BC4 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774759FE256B8D53000B0BC4 /* BinarySearch.swift */; };
+		77475A06256BD6B9000B0BC4 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77475A05256BD6B9000B0BC4 /* Heap.swift */; };
+		77475A12256D2865000B0BC4 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77475A11256D2865000B0BC4 /* HeapTests.swift */; };
 		776504D02568E50600525BC7 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504CF2568E50600525BC7 /* BinarySearchTree.swift */; };
 		776504DE2569FA8800525BC7 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504DD2569FA8800525BC7 /* AVLNode.swift */; };
 		776504E22569FA8F00525BC7 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E12569FA8F00525BC7 /* AVLTree.swift */; };
@@ -46,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77313E4D256DE4FB009C591D /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		77313E51256DE5CE009C591D /* PriorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTests.swift; sourceTree = "<group>"; };
+		774759FE256B8D53000B0BC4 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		77475A05256BD6B9000B0BC4 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		77475A11256D2865000B0BC4 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
 		776504CF2568E50600525BC7 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		776504DD2569FA8800525BC7 /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
 		776504E12569FA8F00525BC7 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
@@ -96,6 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		774759FD256B8D3A000B0BC4 /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				774759FE256B8D53000B0BC4 /* BinarySearch.swift */,
+			);
+			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		77475A04256BD6A6000B0BC4 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				77475A05256BD6B9000B0BC4 /* Heap.swift */,
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
 		779440BB256505D300F042DB = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +159,8 @@
 		779440DC256505F800F042DB /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				77475A04256BD6A6000B0BC4 /* Heap */,
+				774759FD256B8D3A000B0BC4 /* BinarySearch */,
 				77A14D532567936C0013BC28 /* Tree */,
 				779440F9256765EF00F042DB /* Queue */,
 				779440F8256765D000F042DB /* LinkedList */,
@@ -176,6 +204,7 @@
 				77A14D4A25676D8C0013BC28 /* RingBuffer.swift */,
 				77A14D4D25676F910013BC28 /* QueueRingBuffer.swift */,
 				77A14D50256770FC0013BC28 /* QueueStack.swift */,
+				77313E4D256DE4FB009C591D /* PriorityQueue.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -200,6 +229,8 @@
 				77A14DDD256799160013BC28 /* Info.plist */,
 				77A14DD72567990C0013BC28 /* TempletTests.swift */,
 				776504ED256B610300525BC7 /* TrieTests.swift */,
+				77475A11256D2865000B0BC4 /* HeapTests.swift */,
+				77313E51256DE5CE009C591D /* PriorityQueueTests.swift */,
 			);
 			path = TempletTests;
 			sourceTree = "<group>";
@@ -309,15 +340,18 @@
 				779440CC256505D300F042DB /* ViewController.swift in Sources */,
 				776504EA256B594400525BC7 /* Trie.swift in Sources */,
 				776504DE2569FA8800525BC7 /* AVLNode.swift in Sources */,
+				77313E4E256DE4FB009C591D /* PriorityQueue.swift in Sources */,
 				779440C8256505D300F042DB /* AppDelegate.swift in Sources */,
 				779440F52567653100F042DB /* DoublyLinkedList.swift in Sources */,
 				77A14D51256770FC0013BC28 /* QueueStack.swift in Sources */,
 				776504E6256B57AA00525BC7 /* TrieNode.swift in Sources */,
 				779440EF2567610100F042DB /* QueueArray.swift in Sources */,
+				77475A06256BD6B9000B0BC4 /* Heap.swift in Sources */,
 				77A14DE12568AE8A0013BC28 /* BinaryNode.swift in Sources */,
 				77A14D4B25676D8C0013BC28 /* RingBuffer.swift in Sources */,
 				77A14D4E25676F910013BC28 /* QueueRingBuffer.swift in Sources */,
 				77A14D55256793740013BC28 /* TreeNode.swift in Sources */,
+				774759FF256B8D53000B0BC4 /* BinarySearch.swift in Sources */,
 				779440EC2567609300F042DB /* Queue.swift in Sources */,
 				779440E62566987D00F042DB /* Node.swift in Sources */,
 				779440E22565079500F042DB /* Helpers.swift in Sources */,
@@ -332,6 +366,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77475A12256D2865000B0BC4 /* HeapTests.swift in Sources */,
+				77313E52256DE5CE009C591D /* PriorityQueueTests.swift in Sources */,
 				77A14DD82567990D0013BC28 /* TempletTests.swift in Sources */,
 				776504EE256B610300525BC7 /* TrieTests.swift in Sources */,
 			);
@@ -524,6 +560,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LP9D6LSH6;
 				INFOPLIST_FILE = TempletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +580,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LP9D6LSH6;
 				INFOPLIST_FILE = TempletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
