@@ -1,0 +1,40 @@
+//
+//  QuicksortDutchFlag.swift
+//  Templet
+//
+//  Created by wl on 2020/12/8.
+//
+
+import Foundation
+
+
+/// 一般用于重复元素比较多的序列
+public func partitionDutchFlag<T: Comparable>(_ a: inout [T], low: Int, high: Int, pivotIndex: Int) -> (Int, Int) {
+    let pivot = a[pivotIndex]
+    var smaller = low // 1
+    var equal = low // 2
+    var larger = high // 3
+    while equal <= larger { // 4
+      if a[equal] < pivot {
+        a.swapAt(smaller, equal)
+        smaller += 1
+        equal += 1
+      } else if a[equal] == pivot {
+        equal += 1
+      } else {
+        a.swapAt(equal, larger)
+        larger -= 1
+      }
+    }
+    return (smaller, larger) // 5
+}
+
+public func quicksortDutchFlag<T: Comparable>(_ a: inout [T],
+                                              low: Int, high: Int) {
+  if low < high {
+    let (middleFirst, middleLast) =
+      partitionDutchFlag(&a, low: low, high: high, pivotIndex: high)
+    quicksortDutchFlag(&a, low: low, high: middleFirst - 1)
+    quicksortDutchFlag(&a, low: middleLast + 1, high: high)
+  }
+}
