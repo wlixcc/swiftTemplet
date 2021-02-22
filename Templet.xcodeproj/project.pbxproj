@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,9 @@
 		776504EA256B594400525BC7 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E9256B594400525BC7 /* Trie.swift */; };
 		776504EE256B610300525BC7 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504ED256B610300525BC7 /* TrieTests.swift */; };
 		777753D725996B1700DDA962 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777753D625996B1700DDA962 /* CoreDataStack.swift */; };
+		7777543D2599C53E00DDA962 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7777543C2599C53E00DDA962 /* MBProgressHUD */; };
+		777754412599C54900DDA962 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */; };
+		777754452599C56300DDA962 /* HUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777754442599C56300DDA962 /* HUD.xcassets */; };
 		779440C8256505D300F042DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C7256505D300F042DB /* AppDelegate.swift */; };
 		779440CA256505D300F042DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C9256505D300F042DB /* SceneDelegate.swift */; };
 		779440CC256505D300F042DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440CB256505D300F042DB /* ViewController.swift */; };
@@ -89,6 +92,8 @@
 		776504E9256B594400525BC7 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		776504ED256B610300525BC7 /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
 		777753D625996B1700DDA962 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
+		777754442599C56300DDA962 /* HUD.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HUD.xcassets; sourceTree = "<group>"; };
 		779440C4256505D300F042DB /* Templet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Templet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779440C7256505D300F042DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779440C9256505D300F042DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7777543D2599C53E00DDA962 /* MBProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +200,15 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		7777543A2599C4BB00DDA962 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */,
+				777754442599C56300DDA962 /* HUD.xcassets */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
 		779440BB256505D300F042DB = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +230,7 @@
 		779440C6256505D300F042DB /* Templet */ = {
 			isa = PBXGroup;
 			children = (
+				7777543A2599C4BB00DDA962 /* HUD */,
 				777753D525996A9500DDA962 /* CoreData */,
 				779440E02565078800F042DB /* Helper */,
 				779440DC256505F800F042DB /* DataStructures */,
@@ -344,6 +360,9 @@
 			dependencies = (
 			);
 			name = Templet;
+			packageProductDependencies = (
+				7777543C2599C53E00DDA962 /* MBProgressHUD */,
+			);
 			productName = Templet;
 			productReference = 779440C4256505D300F042DB /* Templet.app */;
 			productType = "com.apple.product-type.application";
@@ -393,6 +412,9 @@
 				Base,
 			);
 			mainGroup = 779440BB256505D300F042DB;
+			packageReferences = (
+				7777543B2599C53E00DDA962 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
 			productRefGroup = 779440C5256505D300F042DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -409,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779440D4256505D400F042DB /* LaunchScreen.storyboard in Resources */,
+				777754452599C56300DDA962 /* HUD.xcassets in Resources */,
 				779440D1256505D400F042DB /* Assets.xcassets in Resources */,
 				779440CF256505D300F042DB /* Main.storyboard in Resources */,
 			);
@@ -451,6 +474,7 @@
 				779440EF2567610100F042DB /* QueueArray.swift in Sources */,
 				77475A06256BD6B9000B0BC4 /* Heap.swift in Sources */,
 				77E91BFD257F431F00612041 /* Vertex.swift in Sources */,
+				777754412599C54900DDA962 /* MBProgressHUD+Extension.swift in Sources */,
 				77A14DE12568AE8A0013BC28 /* BinaryNode.swift in Sources */,
 				77A14D4B25676D8C0013BC28 /* RingBuffer.swift in Sources */,
 				77A14D4E25676F910013BC28 /* QueueRingBuffer.swift in Sources */,
@@ -742,6 +766,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7777543B2599C53E00DDA962 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7777543C2599C53E00DDA962 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7777543B2599C53E00DDA962 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 779440BC256505D300F042DB /* Project object */;
 }
