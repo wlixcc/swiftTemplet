@@ -21,6 +21,7 @@
 		776504E6256B57AA00525BC7 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E5256B57AA00525BC7 /* TrieNode.swift */; };
 		776504EA256B594400525BC7 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504E9256B594400525BC7 /* Trie.swift */; };
 		776504EE256B610300525BC7 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504ED256B610300525BC7 /* TrieTests.swift */; };
+		7768849426476B7E00347CBB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768849326476B7E00347CBB /* UIColor+Extension.swift */; };
 		777753D725996B1700DDA962 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777753D625996B1700DDA962 /* CoreDataStack.swift */; };
 		7777543D2599C53E00DDA962 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7777543C2599C53E00DDA962 /* MBProgressHUD */; };
 		777754412599C54900DDA962 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */; };
@@ -45,6 +46,8 @@
 		77A14D55256793740013BC28 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14D54256793740013BC28 /* TreeNode.swift */; };
 		77A14DD82567990D0013BC28 /* TempletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14DD72567990C0013BC28 /* TempletTests.swift */; };
 		77A14DE12568AE8A0013BC28 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14DE02568AE8A0013BC28 /* BinaryNode.swift */; };
+		77C3A6F8265DF1F10007C9DB /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C3A6F7265DF1F10007C9DB /* CGFloat+Extension.swift */; };
+		77C3A6FC265DFB100007C9DB /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C3A6FB265DFB100007C9DB /* PropertyWrappers.swift */; };
 		77E72B8F256FD17B001B2796 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E72B8E256FD17B001B2796 /* MergeSort.swift */; };
 		77E72B93256FD41D001B2796 /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E72B92256FD41D001B2796 /* MergeSortTests.swift */; };
 		77E72B9725708419001B2796 /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E72B9625708419001B2796 /* RadixSort.swift */; };
@@ -91,6 +94,7 @@
 		776504E5256B57AA00525BC7 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		776504E9256B594400525BC7 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		776504ED256B610300525BC7 /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
+		7768849326476B7E00347CBB /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		777753D625996B1700DDA962 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
 		777754442599C56300DDA962 /* HUD.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HUD.xcassets; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		77A14DD72567990C0013BC28 /* TempletTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempletTests.swift; sourceTree = "<group>"; };
 		77A14DDD256799160013BC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A14DE02568AE8A0013BC28 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
+		77C3A6F7265DF1F10007C9DB /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		77C3A6FB265DFB100007C9DB /* PropertyWrappers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		77E72B8E256FD17B001B2796 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		77E72B92256FD41D001B2796 /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
 		77E72B9625708419001B2796 /* RadixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
@@ -192,6 +198,15 @@
 			path = Heap;
 			sourceTree = "<group>";
 		};
+		7768849226476B7200347CBB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7768849326476B7E00347CBB /* UIColor+Extension.swift */,
+				77C3A6F7265DF1F10007C9DB /* CGFloat+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		777753D525996A9500DDA962 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +245,8 @@
 		779440C6256505D300F042DB /* Templet */ = {
 			isa = PBXGroup;
 			children = (
+				77C3A6FD265DFB170007C9DB /* PropertyWrappers */,
+				7768849226476B7200347CBB /* Extension */,
 				7777543A2599C4BB00DDA962 /* HUD */,
 				777753D525996A9500DDA962 /* CoreData */,
 				779440E02565078800F042DB /* Helper */,
@@ -330,6 +347,14 @@
 				77E91C0425806C7000612041 /* BFSTests.swift */,
 			);
 			path = TempletTests;
+			sourceTree = "<group>";
+		};
+		77C3A6FD265DFB170007C9DB /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				77C3A6FB265DFB100007C9DB /* PropertyWrappers.swift */,
+			);
+			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
 		77E91BE7257F1EAE00612041 /* Graphs */ = {
@@ -457,6 +482,7 @@
 				77313EDA256F5F57009C591D /* SelectionSort.swift in Sources */,
 				77E91BF7257F305D00612041 /* AdjacencyMatrix.swift in Sources */,
 				77313ED3256F5BF5009C591D /* BubbleSort.swift in Sources */,
+				77C3A6F8265DF1F10007C9DB /* CGFloat+Extension.swift in Sources */,
 				779440CC256505D300F042DB /* ViewController.swift in Sources */,
 				776504EA256B594400525BC7 /* Trie.swift in Sources */,
 				776504DE2569FA8800525BC7 /* AVLNode.swift in Sources */,
@@ -467,6 +493,7 @@
 				77A14D51256770FC0013BC28 /* QueueStack.swift in Sources */,
 				776504E6256B57AA00525BC7 /* TrieNode.swift in Sources */,
 				77E919572579BE6E00612041 /* QuickSort.swift in Sources */,
+				7768849426476B7E00347CBB /* UIColor+Extension.swift in Sources */,
 				777753D725996B1700DDA962 /* CoreDataStack.swift in Sources */,
 				77E72B9725708419001B2796 /* RadixSort.swift in Sources */,
 				77E91BEF257F29BE00612041 /* AdjacencyList.swift in Sources */,
@@ -482,6 +509,7 @@
 				77F9A42125786F9100486CF9 /* HeapSort.swift in Sources */,
 				77E91BD6257F08FA00612041 /* QuickSortLomuto.swift in Sources */,
 				77E91BE9257F274300612041 /* Graph.swift in Sources */,
+				77C3A6FC265DFB100007C9DB /* PropertyWrappers.swift in Sources */,
 				77E72B8F256FD17B001B2796 /* MergeSort.swift in Sources */,
 				77313EDE256F6079009C591D /* InsertionSort.swift in Sources */,
 				774759FF256B8D53000B0BC4 /* BinarySearch.swift in Sources */,
