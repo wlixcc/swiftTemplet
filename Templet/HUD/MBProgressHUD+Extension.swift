@@ -10,61 +10,74 @@ import Foundation
 import MBProgressHUD
 
 extension MBProgressHUD {
-    static let displayTime = 3.0
+    static var displayTime = 3.0
     
-    static func showImage(imageName: String) -> MBProgressHUD {
-        guard let view = UIApplication.shared.windows.first else {
+    static func show(image: UIImage?) -> MBProgressHUD {
+        guard let view = getKeyWindow() else {
             return MBProgressHUD()
         }
         MBProgressHUD.hide(for: view, animated: false)
         let hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud.mode = .customView
         hud.isUserInteractionEnabled = false
-        let image = UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate)
         hud.customView = UIImageView(image: image)
         hud.offset = CGPoint(x: 0, y: -80)
         return hud
     }
     
-    static func showError(message: String) {
-         let hud = showImage(imageName: "hud_error")
-         hud.label.text = message
-         hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
-     }
-     
-    static func showSuccess(message: String) {
-         let hud = showImage(imageName: "hud_success")
-         hud.label.text = message
-         hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
-     }
-     
-    static func showMessage(message: String) {
-        guard let view = UIApplication.shared.windows.first else {
-            return 
-        }
-         MBProgressHUD.hide(for: view, animated: false)
-         let hud = MBProgressHUD.showAdded(to: view, animated: true)
-         hud.removeFromSuperViewOnHide = true
-         hud.isUserInteractionEnabled = false
-         hud.mode = .text
-         hud.label.text = message
-         hud.offset = CGPoint(x: 0, y: -80)
-         hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
-     }
+    @available(iOS 13.0, *)
+    @discardableResult
+    static func show(error message: String) -> MBProgressHUD {
+        let hud = show(image: UIImage(systemName: "xmark"))
+        hud.label.text = message
+        hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
+        return hud
+    }
     
-    func setCustomView(_ customView: UIView, perferSize size: CGSize) {
+    @available(iOS 13.0, *)
+    @discardableResult
+    static func show(success message: String) -> MBProgressHUD {
+        let hud = show(image: UIImage(systemName: "checkmark"))
+        hud.label.text =  message
+        hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
+        return hud
+    }
+    
+    @discardableResult
+    static func show(message: String) -> MBProgressHUD {
+        guard let view = getKeyWindow() else {
+            return  MBProgressHUD()
+        }
+        MBProgressHUD.hide(for: view, animated: false)
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.removeFromSuperViewOnHide = true
+        hud.isUserInteractionEnabled = false
+        hud.mode = .text
+        hud.label.numberOfLines = 0
+        hud.label.text = message
+        hud.offset = CGPoint(x: 0, y: -80)
+        hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
+        return hud
+    }
+    
+    func setCustomView(_ customView: UIView, preferSize size: CGSize) {
         mode = .customView
-        let contentView = HUDCustomContentView(perferSize: size)
+        let contentView = HUDCustomContentView(preferSize: size)
         contentView.addSubview(customView)
         customView.frame = CGRect(x: 0, y: 0, width: contentView.intrinsicContentSize.width, height: contentView.intrinsicContentSize.height)
         self.customView = contentView
     }
+    
+    /// 使用了PIPController之后,会有PGHostedWindow
+    private static func getKeyWindow() -> UIWindow? {
+        return UIApplication.shared.windows.first(where: {$0.isKeyWindow})
+    }
 }
 
 class HUDCustomContentView: UIView {
-    let perferSize: CGSize
-    init(perferSize: CGSize) {
-        self.perferSize = perferSize
+    let preferSize: CGSize
+    init(preferSize: CGSize) {
+        self.preferSize = preferSize
         super.init(frame: .zero)
     }
     
@@ -73,7 +86,6 @@ class HUDCustomContentView: UIView {
     }
     
     override var intrinsicContentSize: CGSize {
-        return self.perferSize
+        return self.preferSize
     }
-    
 }

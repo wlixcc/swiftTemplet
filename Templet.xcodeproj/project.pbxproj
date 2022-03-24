@@ -25,7 +25,6 @@
 		777753D725996B1700DDA962 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777753D625996B1700DDA962 /* CoreDataStack.swift */; };
 		7777543D2599C53E00DDA962 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7777543C2599C53E00DDA962 /* MBProgressHUD */; };
 		777754412599C54900DDA962 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */; };
-		777754452599C56300DDA962 /* HUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777754442599C56300DDA962 /* HUD.xcassets */; };
 		779440C8256505D300F042DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C7256505D300F042DB /* AppDelegate.swift */; };
 		779440CA256505D300F042DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C9256505D300F042DB /* SceneDelegate.swift */; };
 		779440CC256505D300F042DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440CB256505D300F042DB /* ViewController.swift */; };
@@ -97,7 +96,6 @@
 		7768849326476B7E00347CBB /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		777753D625996B1700DDA962 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
-		777754442599C56300DDA962 /* HUD.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HUD.xcassets; sourceTree = "<group>"; };
 		779440C4256505D300F042DB /* Templet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Templet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779440C7256505D300F042DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779440C9256505D300F042DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */,
-				777754442599C56300DDA962 /* HUD.xcassets */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -456,7 +453,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				779440D4256505D400F042DB /* LaunchScreen.storyboard in Resources */,
-				777754452599C56300DDA962 /* HUD.xcassets in Resources */,
 				779440D1256505D400F042DB /* Assets.xcassets in Resources */,
 				779440CF256505D300F042DB /* Main.storyboard in Resources */,
 			);
@@ -693,12 +689,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6T6NB7VRW;
 				INFOPLIST_FILE = Templet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hzjuzhi.templet.Templet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzjuzhi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -711,12 +708,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6T6NB7VRW;
 				INFOPLIST_FILE = Templet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hzjuzhi.templet.Templet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzjuzhi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
