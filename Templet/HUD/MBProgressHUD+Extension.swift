@@ -22,6 +22,7 @@ extension MBProgressHUD {
         hud.isUserInteractionEnabled = false
         hud.customView = UIImageView(image: image)
         hud.offset = CGPoint(x: 0, y: -80)
+        hud.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
         return hud
     }
     
@@ -31,6 +32,7 @@ extension MBProgressHUD {
         let hud = show(image: UIImage(systemName: "xmark"))
         hud.label.text = message
         hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
+        hud.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
         return hud
     }
     
@@ -40,6 +42,7 @@ extension MBProgressHUD {
         let hud = show(image: UIImage(systemName: "checkmark"))
         hud.label.text =  message
         hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
+        hud.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
         return hud
     }
     
@@ -57,6 +60,7 @@ extension MBProgressHUD {
         hud.label.text = message
         hud.offset = CGPoint(x: 0, y: -80)
         hud.hide(animated: true, afterDelay: MBProgressHUD.displayTime)
+        hud.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
         return hud
     }
     

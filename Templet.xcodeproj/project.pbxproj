@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		77313ED3256F5BF5009C591D /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313ED2256F5BF5009C591D /* BubbleSort.swift */; };
 		77313EDA256F5F57009C591D /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313ED9256F5F57009C591D /* SelectionSort.swift */; };
 		77313EDE256F6079009C591D /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313EDD256F6079009C591D /* InsertionSort.swift */; };
+		7744369E2803C43800FB6F00 /* PopUpDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744369D2803C43800FB6F00 /* PopUpDatePickerView.swift */; };
 		774759FF256B8D53000B0BC4 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774759FE256B8D53000B0BC4 /* BinarySearch.swift */; };
 		77475A06256BD6B9000B0BC4 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77475A05256BD6B9000B0BC4 /* Heap.swift */; };
 		77475A12256D2865000B0BC4 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77475A11256D2865000B0BC4 /* HeapTests.swift */; };
@@ -23,7 +24,6 @@
 		776504EE256B610300525BC7 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776504ED256B610300525BC7 /* TrieTests.swift */; };
 		7768849426476B7E00347CBB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768849326476B7E00347CBB /* UIColor+Extension.swift */; };
 		777753D725996B1700DDA962 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777753D625996B1700DDA962 /* CoreDataStack.swift */; };
-		7777543D2599C53E00DDA962 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7777543C2599C53E00DDA962 /* MBProgressHUD */; };
 		777754412599C54900DDA962 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */; };
 		779440C8256505D300F042DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C7256505D300F042DB /* AppDelegate.swift */; };
 		779440CA256505D300F042DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C9256505D300F042DB /* SceneDelegate.swift */; };
@@ -66,6 +66,7 @@
 		77E91C0525806C7000612041 /* BFSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E91C0425806C7000612041 /* BFSTests.swift */; };
 		77F9A42125786F9100486CF9 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9A42025786F9100486CF9 /* HeapSort.swift */; };
 		77F9A425257871C900486CF9 /* HeapSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9A424257871C900486CF9 /* HeapSortTests.swift */; };
+		A3FC7FE42993DCE0BEB41522 /* Pods_Templet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A961625835B051DEE7F813 /* Pods_Templet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,11 +80,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48A961625835B051DEE7F813 /* Pods_Templet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Templet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5475D19D02A98D4069E43B1C /* Pods-Templet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Templet.release.xcconfig"; path = "Target Support Files/Pods-Templet/Pods-Templet.release.xcconfig"; sourceTree = "<group>"; };
 		77313E4D256DE4FB009C591D /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		77313E51256DE5CE009C591D /* PriorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTests.swift; sourceTree = "<group>"; };
 		77313ED2256F5BF5009C591D /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		77313ED9256F5F57009C591D /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		77313EDD256F6079009C591D /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		7744369D2803C43800FB6F00 /* PopUpDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpDatePickerView.swift; sourceTree = "<group>"; };
 		774759FE256B8D53000B0BC4 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		77475A05256BD6B9000B0BC4 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		77475A11256D2865000B0BC4 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 		77E91C0425806C7000612041 /* BFSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFSTests.swift; sourceTree = "<group>"; };
 		77F9A42025786F9100486CF9 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		77F9A424257871C900486CF9 /* HeapSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSortTests.swift; sourceTree = "<group>"; };
+		D44C7EF8961DE003AD45CEB6 /* Pods-Templet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Templet.debug.xcconfig"; path = "Target Support Files/Pods-Templet/Pods-Templet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7777543D2599C53E00DDA962 /* MBProgressHUD in Frameworks */,
+				A3FC7FE42993DCE0BEB41522 /* Pods_Templet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +167,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B5B7196040750DC11081EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D44C7EF8961DE003AD45CEB6 /* Pods-Templet.debug.xcconfig */,
+				5475D19D02A98D4069E43B1C /* Pods-Templet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		46DFE95C063471007C8BDE6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A961625835B051DEE7F813 /* Pods_Templet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77313ED6256F5BFB009C591D /* Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +200,14 @@
 				77E91BE3257F1A2200612041 /* QuicksortDutchFlag.swift */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		7744369C2803C41F00FB6F00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7744369D2803C43800FB6F00 /* PopUpDatePickerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		774759FD256B8D3A000B0BC4 /* BinarySearch */ = {
@@ -227,6 +257,8 @@
 				779440C6256505D300F042DB /* Templet */,
 				77A14DCC256798FF0013BC28 /* TempletTests */,
 				779440C5256505D300F042DB /* Products */,
+				17B5B7196040750DC11081EF /* Pods */,
+				46DFE95C063471007C8BDE6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +274,7 @@
 		779440C6256505D300F042DB /* Templet */ = {
 			isa = PBXGroup;
 			children = (
+				7744369C2803C41F00FB6F00 /* View */,
 				77C3A6FD265DFB170007C9DB /* PropertyWrappers */,
 				7768849226476B7200347CBB /* Extension */,
 				7777543A2599C4BB00DDA962 /* HUD */,
@@ -373,9 +406,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 779440D8256505D400F042DB /* Build configuration list for PBXNativeTarget "Templet" */;
 			buildPhases = (
+				C7F305D5A3433C84C663C71F /* [CP] Check Pods Manifest.lock */,
 				779440C0256505D300F042DB /* Sources */,
 				779440C1256505D300F042DB /* Frameworks */,
 				779440C2256505D300F042DB /* Resources */,
+				C5287B399EF9BA3BD290FD65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,7 +418,6 @@
 			);
 			name = Templet;
 			packageProductDependencies = (
-				7777543C2599C53E00DDA962 /* MBProgressHUD */,
 			);
 			productName = Templet;
 			productReference = 779440C4256505D300F042DB /* Templet.app */;
@@ -435,7 +469,6 @@
 			);
 			mainGroup = 779440BB256505D300F042DB;
 			packageReferences = (
-				7777543B2599C53E00DDA962 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = 779440C5256505D300F042DB /* Products */;
 			projectDirPath = "";
@@ -466,6 +499,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5287B399EF9BA3BD290FD65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Templet/Pods-Templet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Templet/Pods-Templet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Templet/Pods-Templet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7F305D5A3433C84C663C71F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Templet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		779440C0256505D300F042DB /* Sources */ = {
@@ -509,6 +584,7 @@
 				77E72B8F256FD17B001B2796 /* MergeSort.swift in Sources */,
 				77313EDE256F6079009C591D /* InsertionSort.swift in Sources */,
 				774759FF256B8D53000B0BC4 /* BinarySearch.swift in Sources */,
+				7744369E2803C43800FB6F00 /* PopUpDatePickerView.swift in Sources */,
 				779440EC2567609300F042DB /* Queue.swift in Sources */,
 				779440E62566987D00F042DB /* Node.swift in Sources */,
 				779440E22565079500F042DB /* Helpers.swift in Sources */,
@@ -685,6 +761,7 @@
 		};
 		779440D9256505D400F042DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D44C7EF8961DE003AD45CEB6 /* Pods-Templet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -704,6 +781,7 @@
 		};
 		779440DA256505D400F042DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5475D19D02A98D4069E43B1C /* Pods-Templet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -792,25 +870,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		7777543B2599C53E00DDA962 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		7777543C2599C53E00DDA962 /* MBProgressHUD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7777543B2599C53E00DDA962 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
-			productName = MBProgressHUD;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 779440BC256505D300F042DB /* Project object */;
 }
