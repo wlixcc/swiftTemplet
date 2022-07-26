@@ -74,7 +74,7 @@ extension MBProgressHUD {
     
     /// 使用了PIPController之后,会有PGHostedWindow
     private static func getKeyWindow() -> UIWindow? {
-        return UIApplication.shared.windows.first(where: {$0.isKeyWindow})
+        return UIApplication.shared.windows.first(where: {$0.isKeyWindow}) ?? UIApplication.shared.windows.first
     }
 }
 

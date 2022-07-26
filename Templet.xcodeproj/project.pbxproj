@@ -25,6 +25,7 @@
 		7768849426476B7E00347CBB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768849326476B7E00347CBB /* UIColor+Extension.swift */; };
 		777753D725996B1700DDA962 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777753D625996B1700DDA962 /* CoreDataStack.swift */; };
 		777754412599C54900DDA962 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */; };
+		778CF0C2284DE47C00029F48 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CF0C1284DE47C00029F48 /* UIWindow+Extension.swift */; };
 		779440C8256505D300F042DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C7256505D300F042DB /* AppDelegate.swift */; };
 		779440CA256505D300F042DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440C9256505D300F042DB /* SceneDelegate.swift */; };
 		779440CC256505D300F042DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779440CB256505D300F042DB /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		77A14DE12568AE8A0013BC28 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A14DE02568AE8A0013BC28 /* BinaryNode.swift */; };
 		77C3A6F8265DF1F10007C9DB /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C3A6F7265DF1F10007C9DB /* CGFloat+Extension.swift */; };
 		77C3A6FC265DFB100007C9DB /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C3A6FB265DFB100007C9DB /* PropertyWrappers.swift */; };
+		77DA7C262836334C00DBD7EC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DA7C252836334C00DBD7EC /* String+Extension.swift */; };
 		77E72B8F256FD17B001B2796 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E72B8E256FD17B001B2796 /* MergeSort.swift */; };
 		77E72B93256FD41D001B2796 /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E72B92256FD41D001B2796 /* MergeSortTests.swift */; };
 		77E72B9725708419001B2796 /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E72B9625708419001B2796 /* RadixSort.swift */; };
@@ -100,6 +102,7 @@
 		7768849326476B7E00347CBB /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		777753D625996B1700DDA962 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		777754402599C54900DDA962 /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
+		778CF0C1284DE47C00029F48 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		779440C4256505D300F042DB /* Templet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Templet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779440C7256505D300F042DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779440C9256505D300F042DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 		77A14DE02568AE8A0013BC28 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 		77C3A6F7265DF1F10007C9DB /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		77C3A6FB265DFB100007C9DB /* PropertyWrappers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
+		77DA7C252836334C00DBD7EC /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		77E72B8E256FD17B001B2796 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		77E72B92256FD41D001B2796 /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
 		77E72B9625708419001B2796 /* RadixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 		7768849226476B7200347CBB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				778CF0C1284DE47C00029F48 /* UIWindow+Extension.swift */,
+				77DA7C252836334C00DBD7EC /* String+Extension.swift */,
 				7768849326476B7E00347CBB /* UIColor+Extension.swift */,
 				77C3A6F7265DF1F10007C9DB /* CGFloat+Extension.swift */,
 			);
@@ -564,6 +570,7 @@
 				77A14D51256770FC0013BC28 /* QueueStack.swift in Sources */,
 				776504E6256B57AA00525BC7 /* TrieNode.swift in Sources */,
 				77E919572579BE6E00612041 /* QuickSort.swift in Sources */,
+				778CF0C2284DE47C00029F48 /* UIWindow+Extension.swift in Sources */,
 				7768849426476B7E00347CBB /* UIColor+Extension.swift in Sources */,
 				777753D725996B1700DDA962 /* CoreDataStack.swift in Sources */,
 				77E72B9725708419001B2796 /* RadixSort.swift in Sources */,
@@ -586,6 +593,7 @@
 				774759FF256B8D53000B0BC4 /* BinarySearch.swift in Sources */,
 				7744369E2803C43800FB6F00 /* PopUpDatePickerView.swift in Sources */,
 				779440EC2567609300F042DB /* Queue.swift in Sources */,
+				77DA7C262836334C00DBD7EC /* String+Extension.swift in Sources */,
 				779440E62566987D00F042DB /* Node.swift in Sources */,
 				779440E22565079500F042DB /* Helpers.swift in Sources */,
 				779440CA256505D300F042DB /* SceneDelegate.swift in Sources */,
